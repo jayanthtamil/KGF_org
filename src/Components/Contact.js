@@ -1,0 +1,203 @@
+import React from "react";
+import Footer from "./Footer";
+import {IntlProvider, FormattedMessage} from 'react-intl'
+
+const messagesInFrench = {
+  karur: "Karur",
+  addressOne:"21,22 Cowley Brown Road,",
+  addressTwo:"R.S. Puram,",
+  addressThree:"Coimbatore - 641002",
+  number:"1234567890",
+  mail:"karurgoldfinance@gmail.com",
+
+  
+  mohanur: "Mohanur",
+  erode: "Erode",
+
+  name:"Name:",
+  phone:"Phone:",
+  mailId:"Mail Id:",
+  message:"Message",
+  sumbit:"Sumbit",
+}
+
+const Contact = () => {
+  return (
+    <>
+
+<IntlProvider messages={messagesInFrench} >    
+    <div className="lg:flex  lg:ml-48 lg:mr-48 ml-20 mr-20">
+      <div className="lg:mt-20 mt-6">
+        <b><FormattedMessage id="karur"/></b>
+        <hr />
+        <p><FormattedMessage id="addressOne"/></p>
+        <p><FormattedMessage id="addressTwo"/></p>
+        <p className=""><FormattedMessage id="addressThree"/></p>
+        <p className="flex leading-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class=" w-6 "
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+          <FormattedMessage id="phone"/>
+        </p>
+        <p className="flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          </svg>
+          <FormattedMessage id="mail"/>
+        </p>
+      </div>
+
+      <div className="lg:mx-auto  lg:mt-20 mt-6">
+        <b><FormattedMessage id="erode"/></b>
+        <hr />
+        <p><FormattedMessage id="addressOne"/></p>
+        <p><FormattedMessage id="addressTwo"/></p>
+        <p><FormattedMessage id="addressThree"/></p>
+        <p className="flex leading-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class=" w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+          <FormattedMessage id="phone"/>
+        </p>
+        <p className="flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          </svg>
+          <FormattedMessage id="mail"/>
+        </p>
+      </div>
+
+      <div className=" lg:mt-20 mt-6">
+        <b><FormattedMessage id="mohanur"/></b>
+        <hr />
+        <p><FormattedMessage id="addressOne"/></p>
+        <p><FormattedMessage id="addressTwo"/></p>
+        <p><FormattedMessage id="addressThree"/></p>
+        <p className="flex leading-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class=" w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+          <FormattedMessage id="phone"/>
+        </p>
+        <p className="flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          </svg>
+          <FormattedMessage id="mail"/>
+        </p>
+      </div>
+    </div>
+
+    
+
+    
+ 
+            <div className=" lg:pl-36 lg:py-12 lg:flex mx-12"> 
+
+              <form>
+              <label> <FormattedMessage id="name"/><br/>
+                  <input
+                    type="text"
+                    placeholder="Jayanth..."
+                    className=" border-2 border-gray-900 lg:w-80 w-72 py-2"
+                  />
+                </label><br />
+
+                <label> <FormattedMessage id="phone"/><br/>
+                  <input
+                    type="text"
+                    placeholder="9876543210..."
+                    className="border-2 border-gray-600 lg:w-80 w-72 py-2"
+                  />
+                </label><br />
+
+                <label> <FormattedMessage id="mailId"/><br/>
+                  <input
+                    type="text"
+                    placeholder="kgf123@gmail.com..."
+                    className="border-2 border-gray-600  lg:w-80 w-72 py-2"
+                  />
+                </label><br />
+
+                <label> <FormattedMessage id="message"/>
+                  <textarea
+                    class=" border-2 border-gray-600   block lg:w-80 w-72"
+                    rows="4"
+                   
+                    placeholder=" convey here..."
+                  ></textarea>
+                </label>
+
+                <div className="text-center ">
+                <button className="rounded-full border-4 px-12 py-2 font-bold
+      text-sm bg-gray-400 border-gray-600 w-72 mt-5"><b><FormattedMessage id="sumbit"/></b></button>
+      </div>
+                <br />
+              </form>
+
+              <p className="border-2 border-gray-600 h-3/6 lg:mt-12 lg:ml-44 lg:w-6/12 "> 
+          <iframe className="w-full h-60" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.525763531106!2d78.00630591468204!3d11.07413809211988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2bdc237d8b45%3A0x5e8700fb185a186e!2snila%20mobiles!5e0!3m2!1sen!2sin!4v1627101144277!5m2!1sen!2sin"
+          ></iframe>
+        </p>
+             
+              </div>
+             
+             
+              <Footer />
+              </IntlProvider>
+    </>
+  );
+};
+
+export default Contact;
