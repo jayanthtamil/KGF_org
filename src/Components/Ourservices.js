@@ -19,13 +19,13 @@ const Ourservices = () => {
   return (
     <>
       <IntlProvider messages={messagesInFrench} >
-      <div className="lg:flex lg:mt-24 mt-12 lg:ml-24">
+      <div className="lg:flex lg:mt-24 mt-12 lg:ml-24 ">
            
            <div className=" lg:w-2/6  w-1/2 m-auto">
              <img alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/Agriculture.jpg" />
          </div>
          
-         <div className="  lg:mr-24  text-justify ">
+         <div className="  lg:mr-24 mx-12  text-justify ">
            <b className="lg:text-2xl text-xl lg:pl-12"> <FormattedMessage id="goldLoan"/> </b>
            <p className="lg:text-xl text-sm lg:pl-12"><FormattedMessage id="nameOne"/> </p> 
             </div>
@@ -38,7 +38,7 @@ const Ourservices = () => {
              <img alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/Oldgold.jpg" />
          </div>
          
-         <div className="  lg:mr-24  text-justify ">
+         <div className="  lg:mr-24 mx-12 text-justify ">
            <b className="lg:text-2xl text-xl lg:pl-12"> <FormattedMessage id="goldBuy"/> </b>
            <p className="lg:text-xl text-sm lg:pl-12"><FormattedMessage id="nameOne"/> </p> 
             </div>
@@ -51,7 +51,7 @@ const Ourservices = () => {
              <img alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/Bank.jpg" />
          </div>
          
-         <div className="  lg:mr-24  text-justify ">
+         <div className="  lg:mr-24 mx-12 text-justify ">
            <b className="lg:text-2xl text-xl lg:pl-12"> <FormattedMessage id="bank"/> </b>
            <p className="lg:text-xl text-sm lg:pl-12"><FormattedMessage id="nameOne"/> </p> 
             </div>

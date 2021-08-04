@@ -6,7 +6,7 @@ const Companies = () => {
   return(
     <IntlProvider messages={messagesInFrench} > 
     <div className="lg:py-2">
-    <div className="justify-start lg:px-24">
+    <div className="justify-start lg:px-24 pl-12">
             <h5 className="text-2xl font-bold pb-2 py-4">
               <FormattedMessage
                 id="ourGroup"

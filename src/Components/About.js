@@ -14,7 +14,7 @@ const About = () => {
 
 <IntlProvider messages={messagesInFrench} >
       
-    <div className="lg:flex mt-24 lg:ml-24">
+    <div className="lg:flex mt-24 lg:ml-24 mx-8">
            
              <div className=" lg:w-2/4  ">
                <img alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/Banner1.jpg" />
