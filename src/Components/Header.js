@@ -7,7 +7,7 @@ const messagesInFrench = {
 about:"About Us",
 ourServices:"Our Services",
 branches: "Branches",
-calculator: "Loan Calculator",
+calculator: " Calculator",
 blog:"Blog",
 contact:"Contact"
 }
