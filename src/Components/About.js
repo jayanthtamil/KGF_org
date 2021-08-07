@@ -1,6 +1,7 @@
 import React from "react";
 import {IntlProvider, FormattedMessage} from 'react-intl'
 import Footer from "./Footer";
+import Calculator from "./Calculator";
 
 const messagesInFrench = {
   abouthead1: "Our Story",
@@ -32,7 +33,7 @@ const About = () => {
            
          </div>
        
-
+      <Calculator />
        <Footer />
     </IntlProvider>
          </div>

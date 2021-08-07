@@ -58,8 +58,8 @@ const Branches = () => {
 
                 <div className="lg:mt-6 mt-6  lg:ml-4  mx-3  lg:mb-2">
                 <p  >
-                {/* <iframe className="lg:w-72 w-56 mb-2 py-2" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d62660.581169984514!2d78.00618445117645!3d11.01713109249135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d11.068437!2d78.0081215!4m5!1s0x3baa2ffe718a05b3%3A0x50bf56b19bec7613!2skarur%20gold%20finance!3m2!1d10.9597552!2d78.0731551!5e0!3m2!1sen!2sin!4v1628247894874!5m2!1sen!2sin" ></iframe> */}
-          <iframe className="lg:w-72 w-56 mb-2 py-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.0480195295204!2d78.07096441468096!3d10.95974539219728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2ffe718a05b3%3A0x50bf56b19bec7613!2sKarur%20Gold%20Finance%20-%20KGF!5e0!3m2!1sen!2sin!4v1628315898300!5m2!1sen!2sin"  ></iframe>
+    
+          <iframe className="lg:w-72 w-56 mb-2 py-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.0480195295204!2d78.07096441468096!3d10.95974539219728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2ffe718a05b3%3A0x50bf56b19bec7613!2sKarur%20Gold%20Finance%20-%20KGF!5e0!3m2!1sen!2sin!4v1628315898300!5m2!1sen!2sin"   ></iframe>
         </p>
        </div>
        
@@ -97,10 +97,12 @@ const Branches = () => {
 
                 <div className="lg:mt-6 mt-6  lg:ml-4  ml-3 mr-2 lg:mb-2">
                 <p >
-<iframe className="lg:w-72 w-72 mb-2 py-2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.967634014278!2d77.71562821480576!3d11.33707469194257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f3e66c6945b%3A0x7b317d8bb575d815!2zUGF6aGFtdWRpciBOaWxheWFtIC0g4K6q4K604K6u4K-B4K6k4K6_4K6w4K-NIOCuqOCuv-CusuCviOCur-CuruCvjQ!5e0!3m2!1sen!2sin!4v1628315724451!5m2!1sen!2sin" ></iframe>
-          
+               
+                <iframe className="lg:w-72 w-64 mb-2 py-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.967634014278!2d77.71562821480576!3d11.33707469194257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f3e66c6945b%3A0x7b317d8bb575d815!2zUGF6aGFtdWRpciBOaWxheWFtIC0g4K6q4K604K6u4K-B4K6k4K6_4K6w4K-NIOCuqOCuv-CusuCviOCur-CuruCvjQ!5e0!3m2!1sen!2sin!4v1628320424407!5m2!1sen!2sin" ></iframe>
         </p>
        </div>
+
+       
       </div>
 
       </div>
