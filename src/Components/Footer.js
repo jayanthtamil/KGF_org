@@ -3,11 +3,11 @@ import {IntlProvider, FormattedMessage} from 'react-intl'
 
 const messagesInFrench = {
    karur: "Karur",
-  addressOne:"1st floor, Ashoka Towers,",
-  addressTwo:"Kovai Main Rd,",
-  addressThree:"op.Ajantha Theater,",
-  addressfour:"Karur,",
-  addressfive:"Tamil Nadu",
+  address1:"1st floor, Ashoka Towers,",
+  address2:"Kovai Main Rd,",
+  address3:"op.Ajantha Theater,",
+  address4:"Karur,",
+  address5:"Tamil Nadu",
   mail:"karurgoldfinance@gmail.com",
   no1:"9489043333,9489053333",
 
@@ -17,7 +17,7 @@ const messagesInFrench = {
   address8:"Near BusStand,",
   address9:"Mohanur,",
   address10:"Tamil Nadu",
-  no2:"9486193333,9487183333",
+  no2:"9789073333,9789063033",
   mail:"karurgoldfinance@gmail.com",
 
   erode: "Erode",
@@ -46,15 +46,15 @@ const Footer = () =>{
     <>
     <IntlProvider messages={messagesInFrench} > 
 
-      <footer className="bg-gray-100 text-black-100  shadow-lg">
+      <footer className="bg-gray-100 text-black-100  shadow-lg lg:mt-24 mt-12">
         <div className="lg:flex  lg:ml-48 lg:mr-48 ml-20 mr-20 justify-start">
       <div className="lg:mt-2 mt-2 ">
       <b><FormattedMessage id="karur"/></b>
-        <p><FormattedMessage id="addressOne"/></p>
-        <p><FormattedMessage id="addressTwo"/></p>
-        <p><FormattedMessage id="addressThree"/></p>
-         <p><FormattedMessage id="addressfour"/></p>
-          <p><FormattedMessage id="addressfive"/></p>
+        <p><FormattedMessage id="address1"/></p>
+        <p><FormattedMessage id="address2"/></p>
+        <p><FormattedMessage id="address3"/></p>
+         <p><FormattedMessage id="address4"/></p>
+          <p><FormattedMessage id="address5"/></p>
         <p className="flex leading-8">  <svg
             xmlns="http://www.w3.org/2000/svg"
             class=" w-6"

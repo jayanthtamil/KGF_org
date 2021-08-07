@@ -1,17 +1,35 @@
 import React from "react";
 import {IntlProvider, FormattedMessage} from 'react-intl'
+import Footer from "./Footer";
 
 const messagesInFrench = {
   karur: "KARUR",
-  address:"Address",
-  addressOne:"1st floor, Ashoka Towers,",
-  addressTwo:"Kovai Main Rd,",
-  addressThree:"op.Ajantha Theater, Karur,",
-  addressFour:"Tamil Nadu 639002",
-  phone:"Phone",
-  number:"1234567890",
-  started:"Started",
-  year:"2019",
+  address1:"1st floor, Ashoka Towers,",
+  address2:"Kovai Main Rd,",
+  address3:"op.Ajantha Theater,",
+  address4:"Karur,",
+  address5:"Tamil Nadu",
+  mail:"karurgoldfinance@gmail.com",
+  no1:"9489043333,9489053333",
+
+  mohanur: "MOHANUR",
+  address6:"1st floor,CKP Complex,",
+  address7:"Namakkal Road,",
+  address8:"Near BusStand,",
+  address9:"Mohanur,",
+  address10:"Tamil Nadu",
+  no2:"9789073333,9789063033",
+  mail:"karurgoldfinance@gmail.com",
+
+  erode: "ERODE",
+  address11:"275/7, EVN Road",
+  address12:"palam muthir nilayan,",
+  address13:"2nd floor,EB Office Opposite,",
+  address14:"Erode,",
+  address15:"Tamil Nadu",
+  no3:"9486193333,9487183333",
+  mail:"karurgoldfinance@gmail.com",
+
 
 }
 
@@ -19,107 +37,68 @@ const Branches = () => {
   return (
     <>
     <IntlProvider messages={messagesInFrench} >
-      {/* <div className=" lg:w-2/3 lg:h-60 border-4 border-gray-500 lg:ml-auto lg:mr-auto mt-20 hover:-mt-4">
-        <b className="lg:pl-96 lg:text-2xl text-xl pl-36"><FormattedMessage id="karur"/></b>
-        <hr />
-        <div className="lg:flex mt-4 pl-8">
-          <div className="lg:pl-6 lg:text-xl text-sm">
-            <p>
-            <FormattedMessage id="address"/><span className=" lg:ml-10 ml-11">:</span>
-              <span className=" lg:pl-8 ">
-              <FormattedMessage id="addressOne"/>
-              </span>
-
-            </p>
-            <p className="lg:pl-40 pl-28"><FormattedMessage id="addressTwo"/></p>
-            <p className="lg:pl-40 pl-28"><FormattedMessage id="addressThree"/></p>
-            <p className="lg:pl-40 pl-28"><FormattedMessage id="addressFour"/></p>
-            <p>
-            <FormattedMessage id="phone"/><span className="pl-14">:</span>{" "}
-              <span className="lg:pl-9"><FormattedMessage id="number"/></span>
-            </p>
-            <p>
-            <FormattedMessage id="started"/><span className="pl-12">:</span>{" "}
-              <span className="lg:pl-9"><FormattedMessage id="year"/></span>
-            </p>
-          </div>
-
-          <div className="lg:ml-36  ">
-          <p >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.525763531106!2d78.00630591468204!3d11.07413809211988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2bdc237d8b45%3A0x5e8700fb185a186e!2snila%20mobiles!5e0!3m2!1sen!2sin!4v1627101144277!5m2!1sen!2sin"
-           w-24
-          ></iframe>
-        </p>
-          </div>
-        </div>
-      </div> */}
-
+     
       <div className="lg:flex lg:mt-12 lg:mb-12 ml-12 mr-12 lg:ml-24 lg:mr-24">
       
        <div className="card h- transform hover:scale-110 lg:w-1/4 shadow-2xl text-center rounded-2xl mt-4 mb-8 ">
 
          <div >
-                <b>KARUR</b>
+                
+                <b><FormattedMessage id="karur"/></b>
                 <hr />
-                <p>1st floor, Ashoka Towers,</p>
-                <p>Kovai Main Rd,</p>
-                <p>op.Ajantha Theater,</p>
-                <p>Karur,</p>
-                <p>Tamil Nadu</p>
-                <p>94890 43333,94890 53333</p>
-                <p>karurgoldfinance@gmail.com</p>
+        <p><FormattedMessage id="address1"/></p>
+        <p><FormattedMessage id="address2"/></p>
+        <p><FormattedMessage id="address3"/></p>
+         <p><FormattedMessage id="address4"/></p>
+          <p><FormattedMessage id="address5"/></p>
+          <p><FormattedMessage id="no1"/></p>
+          <p><FormattedMessage id="mail"/></p>
+          
                 </div>
 
-                <div className="lg:mt-6 mt-6  lg:ml-4  ml-3 mr-2 lg:mb-2">
+                <div className="lg:mt-6 mt-6  lg:ml-4  mx-3  lg:mb-2">
                 <p  >
-          <iframe className="lg:w-72 w-72 mb-2 py-2 "
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.525763531106!2d78.00630591468204!3d11.07413809211988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2bdc237d8b45%3A0x5e8700fb185a186e!2snila%20mobiles!5e0!3m2!1sen!2sin!4v1627101144277!5m2!1sen!2sin"
-           
-          ></iframe>
+                {/* <iframe className="lg:w-72 w-56 mb-2 py-2" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d62660.581169984514!2d78.00618445117645!3d11.01713109249135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d11.068437!2d78.0081215!4m5!1s0x3baa2ffe718a05b3%3A0x50bf56b19bec7613!2skarur%20gold%20finance!3m2!1d10.9597552!2d78.0731551!5e0!3m2!1sen!2sin!4v1628247894874!5m2!1sen!2sin" ></iframe> */}
+          <iframe className="lg:w-72 w-56 mb-2 py-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.0480195295204!2d78.07096441468096!3d10.95974539219728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2ffe718a05b3%3A0x50bf56b19bec7613!2sKarur%20Gold%20Finance%20-%20KGF!5e0!3m2!1sen!2sin!4v1628315898300!5m2!1sen!2sin"  ></iframe>
         </p>
        </div>
        
       </div>
       
       <div className="card transform hover:scale-110 lg:w-1/4 shadow-2xl text-center   lg:mx-auto  rounded-2xl mt-4 mb-8">
-                <b>MOHANUR</b>
+      <b><FormattedMessage id="mohanur"/></b>
                 <hr />
-                <p>1st floor,CKP Complex,</p>
-                <p>Namakkal Road,</p>
-                <p>Near BusStand,</p>
-                <p>Mohanur,</p>
-                <p>Tamilnadu</p>
-                <p>94861 93333,94871 83333</p>
-                <p>karurgoldfinance@gmail.com</p>
+        <p><FormattedMessage id="address6"/></p>
+        <p><FormattedMessage id="address7"/></p>
+        <p><FormattedMessage id="address8"/></p>
+         <p><FormattedMessage id="address9"/></p>
+          <p><FormattedMessage id="address10"/></p>
+          <p><FormattedMessage id="no2"/></p>
+          <p><FormattedMessage id="mail"/></p>
 
                 <div className="lg:mt-6 mt-6  lg:ml-4  ml-3 mr-2 lg:mb-2">
                 <p >
-          <iframe className="lg:w-72 w-72 mb-2 py-2 "
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.525763531106!2d78.00630591468204!3d11.07413809211988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2bdc237d8b45%3A0x5e8700fb185a186e!2snila%20mobiles!5e0!3m2!1sen!2sin!4v1627101144277!5m2!1sen!2sin"
-           w-24
-          ></iframe>
+          
+          <iframe className="lg:w-72 w-64 mb-2 py-2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.6774845362133!2d78.13725121437732!3d11.062789156868616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa3364c0edb555%3A0x7f9a430d1d42bd9!2sKarur%20Gold%20Finance%20-%20KGF!5e0!3m2!1sen!2sin!4v1628254585592!5m2!1sen!2sin" ></iframe>
         </p>
        </div>
       </div>
 
       <div className="card transform hover:scale-110 lg:w-1/4 shadow-2xl  text-center     rounded-2xl mt-4 mb-8">
-                <b>ERODE</b>
+      <b><FormattedMessage id="erode"/></b>
                 <hr />
-                <p>275/7, EVN Road</p>
-                <p>palam muthir nilayan,</p>
-                <p>2nd floor,EB Office Opposite, </p>
-                <p>Erode,</p>
-                <p>Tamil Nadu</p>
-                <p>94861 93333,94871 83333</p>
-                <p>karurgoldfinance@gmail.com</p>
+        <p><FormattedMessage id="address11"/></p>
+        <p><FormattedMessage id="address12"/></p>
+        <p><FormattedMessage id="address13"/></p>
+         <p><FormattedMessage id="address14"/></p>
+          <p><FormattedMessage id="address15"/></p>
+          <p><FormattedMessage id="no3"/></p>
+          <p><FormattedMessage id="mail"/></p>
 
                 <div className="lg:mt-6 mt-6  lg:ml-4  ml-3 mr-2 lg:mb-2">
                 <p >
-          <iframe className="lg:w-72 w-72 mb-2 py-2 "
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.525763531106!2d78.00630591468204!3d11.07413809211988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2bdc237d8b45%3A0x5e8700fb185a186e!2snila%20mobiles!5e0!3m2!1sen!2sin!4v1627101144277!5m2!1sen!2sin"
-           w-24
-          ></iframe>
+<iframe className="lg:w-72 w-72 mb-2 py-2 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.967634014278!2d77.71562821480576!3d11.33707469194257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f3e66c6945b%3A0x7b317d8bb575d815!2zUGF6aGFtdWRpciBOaWxheWFtIC0g4K6q4K604K6u4K-B4K6k4K6_4K6w4K-NIOCuqOCuv-CusuCviOCur-CuruCvjQ!5e0!3m2!1sen!2sin!4v1628315724451!5m2!1sen!2sin" ></iframe>
+          
         </p>
        </div>
       </div>
@@ -130,7 +109,7 @@ const Branches = () => {
       
 
       
-
+        <Footer />
       </IntlProvider>
     </>
   );

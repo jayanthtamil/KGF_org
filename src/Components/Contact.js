@@ -18,7 +18,7 @@ const messagesInFrench = {
   address8:"Near BusStand,",
   address9:"Mohanur,",
   address10:"Tamil Nadu",
-  no2:"9486193333,9487183333",
+  no2:"9789073333,9789063033",
   mail:"karurgoldfinance@gmail.com",
 
   erode: "Erode",
@@ -211,11 +211,14 @@ const Contact = () => {
                 <br />
               </form>
 
-              <p className="border-2 border-gray-600 h-3/6 lg:mt-12 lg:ml-44 lg:w-6/12 rounded-lg "> 
+              {/* <p className="border-2 border-gray-600 h-3/6 lg:mt-12 lg:ml-44 lg:w-6/12 rounded-lg "> 
           <iframe className="w-full h-60" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.525763531106!2d78.00630591468204!3d11.07413809211988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2bdc237d8b45%3A0x5e8700fb185a186e!2snila%20mobiles!5e0!3m2!1sen!2sin!4v1627101144277!5m2!1sen!2sin"
           ></iframe>
+        </p> */}
+        <p className="border-2 border-gray-600 h-3/6 lg:mt-12 lg:ml-44 lg:w-6/12 rounded-lg "> 
+        <iframe className="w-full h-60"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.0480195295204!2d78.07096441468096!3d10.95974539219728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2ffe718a05b3%3A0x50bf56b19bec7613!2sKarur%20Gold%20Finance%20-%20KGF!5e0!3m2!1sen!2sin!4v1628315898300!5m2!1sen!2sin"  ></iframe>
         </p>
-             
+
               </div>
              
              
