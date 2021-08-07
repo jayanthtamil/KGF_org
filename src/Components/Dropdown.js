@@ -23,8 +23,8 @@ const Dropdown = ({ isOpen, toggle }) => {
       <Link to='/branches' className='p-4'>
       Branches
       </Link>
-      <Link to='/blogs' className='p-4'>
-      Loan Calculator
+      <Link to='/calculator' className='p-4'>
+       Calculator
       </Link>
       <Link to='/blogs' className='p-4'>
       Blogs

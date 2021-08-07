@@ -46,7 +46,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/ourservices" component={Ourservices} />
         <Route path="/Branches" component={Branches} />
-        <Route path="/Calculator" component={Calculator} />
+        <Route path="/calculator" component={Calculator} />
         <Route path="/Blog" component={Blog} />
         <Route path="/contact" component={Contact} />
        

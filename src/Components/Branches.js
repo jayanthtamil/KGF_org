@@ -109,8 +109,6 @@ const Branches = () => {
 
 
       
-
-      
         <Footer />
       </IntlProvider>
     </>
