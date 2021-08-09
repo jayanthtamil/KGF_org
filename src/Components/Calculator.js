@@ -41,26 +41,31 @@ const Calculator = () =>{
       let max = 3750*grams;
       setmax(max)
     }
+    else{
+      return(
+      "please enter the weight in grams"
+      )
+    }
   }
 
   
 
 return(
   <>
- <div className="text-4xl lg:mt-24 mt-12 ml-24">GOLD LOAN CALCULATOR</div>
+ <div className="text-4xl lg:mt-24 mt-12 text-center">GOLD LOAN CALCULATOR</div>
  <form className="mt-12">
  <div className="lg:flex ">
       <div className="lg:w-2/6 flex  mt-8">
-   <label className="lg:ml-24 ">Name:</label>
-   <input type="text" className="border-2 border-black  w-1/2 lg:ml-0 ml-4"/>
+   <label className="lg:ml-24 ml-12">Name:</label>
+   <input type="text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-24 hover:border-blue-900"/>
    </div>
    <div className="lg:w-2/6  mt-8">
-   <label className="">Contact Number:</label>
-   <input type="lg:text" className="border-2 border-black w-1/2"/>
+   <label className="lg:ml-0 ml-12">Contact Number:</label>
+   <input type="lg:text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-5 hover:border-blue-900"/>
    </div>
    <div className="lg:w-2/6  mt-8">
-   <label className="">Email Address:</label>
-   <input type="text" className="border-2 border-black w-1/2"/>
+   <label className="lg:ml-0 ml-12">Email Address:</label>
+   <input type="text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-10 hover:border-blue-900"/>
    </div>
 </div>
 
@@ -69,8 +74,8 @@ return(
 
 <div className="lg:mt-2  lg:flex ">
   <div className="lg:w-2/6 mt-8">
- <label className="lg:ml-24  "> Gold Type :</label>
-   <select  >
+ <label className="lg:ml-24 ml-12 "> Gold Type :</label>
+   <select className="lg:w-1/2 w-1/3 lg:ml-0 ml-16"  >
     <option value="WITH STONE" >WITH STONE</option>
     <option  value="CHAIN">CHAIN</option>
     <option  value="SOLID">SOLID</option>
@@ -78,8 +83,8 @@ return(
   </div>
 
 <div  className="lg:w-2/6 mt-8 ">
-  <label className=" ">Purity of Gold :</label>
-   <select name ='option'  onChange={ (event) => setoption(event.target.value) } >
+  <label className="lg:ml-0 ml-12 ">Purity of Gold :</label>
+   <select className="lg:w-1/2 w-1/3  ml-8 lg:ml-0" name ='option'  onChange={ (event) => setoption(event.target.value) } >
     <option  value="OS" >OS</option>
     <option  value="22CT" >22CT</option>
     <option  value="KDM">KDM</option>
@@ -88,17 +93,17 @@ return(
   </div>
 
   <div  className="lg:w-2/6 mt-8 ">
-<label className="" >Weight in.gms :
-  <input type="number" placeholder="weight in grams" className="border-2 border-black w-1/2 "  value={grams} onChange={ (e) => setgrams(e.target.value) }/> 
+<label className="lg:ml-0 ml-12" >Weight in.gms :
+  <input type="number" placeholder="weight in grams" className="border-2 rounded w-1/2 lg:w-1/2 w-1/3 lg:ml-0 ml-8 hover:border-blue-900"  value={grams} onChange={ (e) => setgrams(e.target.value) }/> 
   </label>
 </div>
 
   </div>
 
 <br />
-  <button className="bg-red-500 border-2 border-black lg:ml-24 lg:mt-16 ml-32"  type="button" onClick={() => calculate()} >CALCULATE</button>
-  <div className="color-red-900 lg:mt-24 lg:ml-24 ">Min Amount :{min}</div>
-  <div className="color-red-900 lg:ml-24 ">Max Amount :{max}</div>
+  <button className="bg-red-500 border-2  lg:ml-24 lg:mt-16 ml-40 "  type="button" onClick={() => calculate()} >CALCULATE</button>
+  <div className="color-red-900 lg:mt-24 lg:ml-24 mt-8 ml-12 italic font-bold text-2xl">Min Amount :{min}</div>
+  <div className="color-red-900 lg:ml-24 ml-12 italic font-bold text-2xl">Max Amount :{max}</div>
   
   
 

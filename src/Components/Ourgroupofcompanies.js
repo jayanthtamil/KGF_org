@@ -6,7 +6,7 @@ const Companies = () => {
   return(
     <IntlProvider messages={messagesInFrench} > 
     <div className="lg:py-2">
-    <div className="justify-start lg:px-24 pl-12">
+    <div className="lg:justify-start text-center lg:px-24 pl-12">
             <h5 className="text-2xl font-bold pb-2 py-4">
               <FormattedMessage
                 id="ourGroup"
@@ -22,7 +22,7 @@ const Companies = () => {
                   <img
                     alt="Image"
                     src="/Image/kts.jpeg"
-                    className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
+                    className="shadow-lg  mx-auto lg:w-3/4 w-11/12 hover:shadow-2xl"
                   />
                 </a>
               </div>
@@ -34,7 +34,7 @@ const Companies = () => {
                   <img
                     alt="Image"
                     src="/Image/finestreet.jpeg"
-                    className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
+                    className="shadow-lg  mx-auto lg:w-3/4 w-11/12 hover:shadow-2xl"
                   />
                 </a>
               </div>
@@ -46,7 +46,7 @@ const Companies = () => {
                   <img
                     alt="Image"
                     src="/Image/thogaimurugan.png"
-                    className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
+                    className="shadow-lg  mx-auto lg:w-3/4 w-11/12 hover:shadow-2xl"
                   />
                 </a>
               </div>
@@ -58,7 +58,7 @@ const Companies = () => {
                   <img
                     alt="Image"
                     src="/Image/Logo.png"
-                    className="shadow-lg  mx-auto w-3/4 hover:shadow-2xl"
+                    className="shadow-lg  mx-auto lg:w-3/4 w-11/12 hover:shadow-2xl"
                   />
                 </a>
               </div>
