@@ -89,7 +89,7 @@ return(
 
     <div className="lg:flex mt-24 lg:ml-24 mx-8">
            <div className=" lg:w-2/4  ">
-             <img alt="..." className="align-middle border-none max-w-full h-auto rounded-full" src="/Image/santhosh.JPG" />
+             <img alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/santhosh.JPG" />
              <p className="text-center text-md">Santhose Murugan</p>
              <p className="text-center  text-md">Founder,KGF</p>
          </div>

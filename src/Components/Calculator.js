@@ -64,7 +64,7 @@ return(
    <input type="lg:text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-5 hover:border-blue-900"/>
    </div>
    <div className="lg:w-2/6  mt-8">
-   <label className="lg:ml-0 ml-12">Email Address:</label>
+   <label className="lg:ml-0 ml-12">City:</label>
    <input type="text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-10 hover:border-blue-900"/>
    </div>
 </div>

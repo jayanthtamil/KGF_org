@@ -1,4 +1,4 @@
-import * as React from 'react'
+import   React from 'react'
 import {IntlProvider, FormattedMessage, FormattedNumber} from 'react-intl'
 
 
@@ -6,18 +6,12 @@ const messagesInFrench = {
   myMessage: "Aujourd'hui, c'est le {ts, date, ::yyyyMMdd}",
 }
 
-export default function Blog() {
-  return (
-    <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
-      <p>
-        <FormattedMessage
-          id="myMessage"
-          defaultMessage="Today is {ts, date, ::yyyyMMdd}"
-          values={{ts: Date.now()}}
-        />
-        <br />
-        <FormattedNumber value={19} style="currency" currency="EUR" />
-      </p>
-    </IntlProvider>
+const Blog = () =>{
+  return(
+    <div>
+      <h1 className="text-center my-48 font-bold text-2xl">Blog Is Under Construction</h1>
+    </div>
   )
 }
+
+export default Blog;
