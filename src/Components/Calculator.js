@@ -16,7 +16,7 @@ const Calculator = () =>{
     {
       let min = 3000*grams;
       setmin(min);
-      let max= 3500*grams;
+      let max= 3600*grams;
       setmax(max);
 
     }
@@ -24,21 +24,21 @@ const Calculator = () =>{
       let min = 3000*grams;
       setmin(min);
 
-      let max = 3600*grams;
+      let max = 3900*grams;
       setmax(max)
     }
     else if (option === "KDM"){
       let min = 3000*grams;
       setmin(min);
 
-      let max = 3600*grams;
+      let max = 4000*grams;
       setmax(max)
     }
     else if (option === "916"){
       let min = 3000*grams;
       setmin(min);
 
-      let max = 3750*grams;
+      let max = 4200*grams;
       setmax(max)
     }
     else{
@@ -65,7 +65,7 @@ return(
    </div>
    <div className="lg:w-2/6  mt-8">
    <label className="lg:ml-0 ml-12">City:</label>
-   <input type="text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-10 hover:border-blue-900"/>
+   <input type="text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-28 hover:border-blue-900"/>
    </div>
 </div>
 
@@ -105,11 +105,6 @@ return(
   <div className="color-red-900 lg:mt-24 lg:ml-24 mt-8 ml-12 italic font-bold text-2xl">Min Amount :{min}</div>
   <div className="color-red-900 lg:ml-24 ml-12 italic font-bold text-2xl">Max Amount :{max}</div>
   
-  
-
-
-
-
  </form>
 
  <Footer />

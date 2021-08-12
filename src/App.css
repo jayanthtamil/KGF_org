@@ -11,12 +11,12 @@
  }
  .slider .slick-prev::before{
   font-size: 35px;
-  color:white;
+  color:gray;
  }
  
 .slider .slick-next:before{
   font-size: 35px;
-  color:white;
+  color:gray;
  }
 /*above are represt slider*/
 .sample{

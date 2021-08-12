@@ -1,6 +1,7 @@
 import React from "react";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import Footer from "./Footer";
+import { Link} from "react-router-dom";
 
 const messagesInFrench = {
   servicepara2:
@@ -12,12 +13,21 @@ const messagesInFrench = {
   servicehead1: "Gold Loan",
   servicehead2: "Old Gold Buying",
   servicehead3: "Taking mortgage gold from bank",
-  
+  servicehead4: "Agricultute Loan",
+  servicehead5: "Personal Loan"
 };
 const Ourservices = () => {
   return (
     <>
       <IntlProvider messages={messagesInFrench} >
+
+      <div className=" lg:mt-24 mt-12 lg:mx-32 ">
+           <h1 className="font-bold text-2xl">MINIMUM DOCUMENTS REUIRED</h1>
+           <p>* Aadhaar Card</p>
+           <p>* Pan Card</p>
+       </div>
+
+
       <div className="lg:flex lg:mt-24 mt-12  ">
            <div className="lg:w-1/3">
            <div className=" lg:w-1/2 w-1/2 m-auto">
@@ -62,44 +72,35 @@ const Ourservices = () => {
             </div>
        </div>
 
-       
-
-
-
-
-
-
-
-
-
-       {/* <div className="lg:flex lg:mt-24 mt-12 lg:ml-24">
-           
-       <div className="lg:w-1/2 w-1/2 m-auto">
-         <img className="lg:h-96  lg:w-96" className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/oldgold.jpg" /> 
-        </div>
-         
+       <div className="lg:flex lg:mt-24 mt-12 ">
+           <div className="lg:w-1/3">
+           <div className=" lg:w-1/2 w-1/2 m-auto">
+             <img className="lg:h-96  lg:w-96" alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/mortgage.jpg" />
+         </div>
+         </div>
+         <div className="lg:w-2/3">
          <div className="  lg:mr-24 mx-12  text-justify ">
-           <b className="lg:text-2xl text-xl lg:pl-12"> <FormattedMessage id="servicehead2"/> </b>
-           <p className="lg:text-xl text-sm lg:pl-12"><FormattedMessage id="servicepara2"/> </p> 
+           <b className="lg:text-2xl text-xl "> <FormattedMessage id="servicehead4"/> </b>
+           <p className="lg:text-xl text-sm "><FormattedMessage id="servicepara3"/> </p> 
             </div>
-         
+            </div>
        </div>
 
-       <div className="lg:flex lg:mt-24 mt-12 lg:ml-24">
-           
-       <div className="lg:w-1/2 w-1/2 m-auto">
-       <img className=" lg:h-96  lg:w-96" alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/mortgage.jpg" />
-       </div>
-         
-         <div className="  lg:mr-24 mx-12 text-justify ">
-           <b className="lg:text-2xl text-xl lg:pl-12"> <FormattedMessage id="servicehead3"/> </b>
-           <p className="lg:text-xl text-sm lg:pl-12"><FormattedMessage id="servicepara3"/> </p> 
+       <div className="lg:flex lg:mt-24 mt-12 ">
+           <div className="lg:w-1/3">
+           <div className=" lg:w-1/2 w-1/2 m-auto">
+             <img className="lg:h-96  lg:w-96" alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/mortgage.jpg" />
+         </div>
+         </div>
+         <div className="lg:w-2/3">
+         <div className="  lg:mr-24 mx-12  text-justify ">
+           <b className="lg:text-2xl text-xl "> <FormattedMessage id="servicehead5"/> </b>
+           <p className="lg:text-xl text-sm "><FormattedMessage id="servicepara3"/> </p> 
             </div>
-         
-       </div> */}
-      
+            </div>
+       </div>
 
-
+       
 
        <Footer />
      </IntlProvider>
@@ -110,68 +111,3 @@ const Ourservices = () => {
 export default Ourservices;
 
 
-{/* <div className="lg:flex mt-12 lg:mx-48">
-          <div className="lg:mt-24 lg:w-1/4">
-            <img
-              alt="..."
-              className=" lg:h-44  h:24 w-40 m-auto rounded-lg"
-              src="/Image/Gold.jpg"
-            />
-          </div>
-          <div className="lg:mt-24  lg:w-3/4  lg:text-justify">
-            <b className=" lg:text-2xl text-xl text-center ">
-              <FormattedMessage id="head" />
-            </b>
-            <p className=" lg:text-xl text-sm text-justify">
-              <FormattedMessage id="name" />{" "}
-            </p>{" "}
-          </div>
-        </div>
-
-        <div className="lg:mt-24 text-center ">
-          <b className=" lg:text-2xl text-xl ">
-            <FormattedMessage id="headOne" />
-          </b>
-          <div className="lg:flex  ">
-            <img
-              alt="..."
-              className="lg:h-44 w-48 lg:ml-24  m-auto rounded-lg"
-              src="/Image/Agriculture.jpg"
-            />
-            <p className="  lg:text-xl text-sm lg:mr-24 lg:pl-12">
-              <FormattedMessage id="nameOne" />{" "}
-            </p>{" "}
-          </div>
-        </div>
-
-        <div className="lg:mt-24 text-center">
-          <b className="lg:ml-48 lg:text-2xl text-xl ">
-            <FormattedMessage id="headTwo" />
-          </b>
-          <div className="lg:flex  ">
-            <img
-              alt="..."
-              className="lg:h-44 w-48 lg:ml-48 m-auto border-none   rounded-lg"
-              src="/Image/Vehicle.png"
-            />
-            <p className="lg:mr-48 lg:ml-8 sm:m-auto  lg:text-xl text-sm">
-              <FormattedMessage id="nameOne" />
-            </p>{" "}
-          </div>
-        </div>
-
-        <div className="lg:mt-24 text-center">
-          <b className="lg:ml-48 lg:text-2xl text-xl ">
-            <FormattedMessage id="headThree" />
-          </b>
-          <div className="lg:flex  ">
-            <img
-              alt="..."
-              className="lg:h-44 w-48 lg:ml-48 m-auto border-none   rounded-lg"
-              src="/Image/Personal.jpg"
-            />
-            <p className="lg:mr-48 lg:ml-8 sm:m-auto  lg:text-xl text-sm">
-              <FormattedMessage id="nameOne" />{" "}
-            </p>{" "}
-          </div>
-        </div> */}

@@ -1,15 +1,12 @@
-import React from "react";
-import Banner from "./Banner";
-import About from './About';
-import Ourservices from "./Ourservices";
-import Branches from "./Branches";
-//  import Contact from "./Contact";
+import React, {useState} from "react";
 import Footer from "./Footer";
 import Companies from "./Ourgroupofcompanies";
 import Slider from "react-slick";
+import { Link} from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {IntlProvider, FormattedMessage} from 'react-intl'
+import BannerServices from "./BannerServices";
 
 const messagesInFrench = {
   abouthead1: "Our Story",
@@ -62,9 +59,62 @@ const Home = () =>{
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    
-
 };
+
+const[option , setoption] = useState("OS");
+const [grams , setgrams] = useState();
+const[min , setmin] = useState();
+const[max , setmax] = useState();
+
+const calculate = () =>{  
+     
+  if(option === "OS")
+  {
+    let min = 3000*grams;
+    setmin(min);
+    let max= 3600*grams;
+    setmax(max);
+
+  }
+  else if (option === "22CT"){
+    let min = 3000*grams;
+    setmin(min);
+
+    let max = 3900*grams;
+    setmax(max)
+  }
+  else if (option === "KDM"){
+    let min = 3000*grams;
+    setmin(min);
+
+    let max = 4000*grams;
+    setmax(max)
+  }
+  else if (option === "916"){
+    let min = 3000*grams;
+    setmin(min);
+
+    let max = 4200*grams;
+    setmax(max)
+  }
+  else{
+    return(
+    "please enter the weight in grams"
+    )
+  }
+}
+
+const setting = {
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true,
+};
+
+
+
 return(
   <>
   <IntlProvider messages={messagesInFrench} >
@@ -100,7 +150,7 @@ return(
        </div>
 
 
-       <div className="lg:flex lg:mt-24 mt-12   lg:-ml-8">
+       {/* <div className="lg:flex lg:mt-24 mt-12   lg:-ml-8">
            <div className="lg:w-1/3">
            <div className=" lg:w-1/2 w-1/2 m-auto">
              <img className="lg:h-96  lg:w-96" alt="..." className="align-middle border-none max-w-full h-auto rounded-lg" src="/Image/goldloan.jpg" />
@@ -142,9 +192,103 @@ return(
            <p className="lg:text-xl text-sm "><FormattedMessage id="servicepara3"/> </p> 
             </div>
             </div>
+       </div> 
+ */}
+
+
+       <h1 className="text-center mt-12 lg:text-4xl font-bold  text-2xl">Services We Provide</h1>
+
+       <div className="card lg:flex bg-green-500 lg:pt-0 py-2 lg:mx-24 mx-12 lg:mt-16 lg:h-56  h-auto rounded-lg">
+
+        
+       <div className="card bg-white lg:text-xl text-md text-center font-bold lg:mb-4 lg:mt-4 lg:ml-16 mx-auto lg:w-1/6 w-40 lg:h-48 h-24 rounded-lg">
+            <Link to="/ourservices" ><h1  className="lg:mt-4 mt-2">GOLD LOAN</h1></Link>
+            </div>
+
+            <div className="card bg-white lg:text-xl text-md text-center font-bold lg:mb-4 lg:mt-4 mx-auto lg:w-1/6 w-40 lg:h-48 h-24 rounded-lg">
+            <Link to="/ourservices" ><h1  className="mt-4">OLD GOLD BUYING</h1></Link>
+            </div>
+
+            <div className="card bg-white lg:text-xl text-md text-center font-bold lg:mb-4 lg:mt-4 mx-auto  lg:w-1/6 w-40 lg:h-48 h-24 rounded-lg">
+            <Link to="/ourservices" ><h1  className="mt-4">TAKING MORTGAGE GOLD FROM BANK </h1></Link>
+            </div>
+
+            <div className="card bg-white lg:text-xl text-md text-center font-bold lg:mb-4 lg:mt-4 mx-auto lg:w-1/6 w-40 lg:h-48 h-24 rounded-lg">
+            <Link to="/ourservices" ><h1  className="mt-4">AGRICULTUTE LOAN</h1></Link>
+            </div>
+
+            <div className="card bg-white lg:text-xl text-md text-center font-bold lg:mb-4 lg:mt-4  mx-auto lg:mr-16 lg:w-1/6 w-40 lg:h-48 h-24 rounded-lg">
+            <Link to="/ourservices" ><h1  className="mt-4">PERSONAL LOAN</h1></Link>
+            </div>
+         
        </div>
 
-       
+       {/* <BannerServices></BannerServices> */}
+
+
+
+
+
+       <>
+ <div className="text-4xl lg:mt-20 mt-12 text-center">GOLD LOAN CALCULATOR</div>
+ <form className="mt-12">
+ <div className="lg:flex ">
+      <div className="lg:w-2/6 flex  mt-8">
+   <label className="lg:ml-24 ml-12">Name:</label>
+   <input type="text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-24 hover:border-blue-900"/>
+   </div>
+   <div className="lg:w-2/6  mt-8">
+   <label className="lg:ml-0 ml-12">Contact Number:</label>
+   <input type="lg:text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-5 hover:border-blue-900"/>
+   </div>
+   <div className="lg:w-2/6  mt-8">
+   <label className="lg:ml-0 ml-12">City:</label>
+   <input type="text" className="border-2 rounded lg:ml-0 lg:w-1/2 w-1/3  ml-28 hover:border-blue-900"/>
+   </div>
+</div>
+
+<br />
+
+
+<div className="lg:mt-2  lg:flex ">
+  <div className="lg:w-2/6 mt-8">
+ <label className="lg:ml-24 ml-12 "> Gold Type :</label>
+   <select className="lg:w-1/2 w-1/3 lg:ml-0 ml-16"  >
+    <option value="WITH STONE" >WITH STONE</option>
+    <option  value="CHAIN">CHAIN</option>
+    <option  value="SOLID">SOLID</option>
+  </select> 
+  </div>
+
+<div  className="lg:w-2/6 mt-8 ">
+  <label className="lg:ml-0 ml-12 ">Purity of Gold :</label>
+   <select className="lg:w-1/2 w-1/3  ml-8 lg:ml-0" name ='option'  onChange={ (event) => setoption(event.target.value) } >
+    <option  value="OS" >OS</option>
+    <option  value="22CT" >22CT</option>
+    <option  value="KDM">KDM</option>
+    <option  value="916">916</option>
+  </select>
+  </div>
+
+  <div  className="lg:w-2/6 mt-8 ">
+<label className="lg:ml-0 ml-12" >Weight in.gms :
+  <input type="number" placeholder="weight in grams" className="border-2 rounded w-1/2 lg:w-1/2 w-1/3 lg:ml-0 ml-8 hover:border-blue-900"  value={grams} onChange={ (e) => setgrams(e.target.value) }/> 
+  </label>
+</div>
+
+  </div>
+
+<br />
+  <button className="bg-red-500 border-2  lg:ml-24 lg:mt-16 ml-40 "  type="button" onClick={() => calculate()} >CALCULATE</button>
+  <div className="color-red-900 lg:mt-24 lg:ml-24 mt-8 ml-12 italic font-bold text-2xl">Min Amount :{min}</div>
+  <div className="color-red-900 lg:ml-24 ml-12 italic font-bold text-2xl">Max Amount :{max}</div>
+  
+ </form>
+
+
+  </>
+
+
 
        
        <div className="lg:flex lg:mt-12 lg:mb-12 ml-12 mr-12 lg:ml-24 lg:mr-24">

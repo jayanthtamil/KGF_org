@@ -16,6 +16,7 @@ const Companies = () => {
           </div>
 
           <div className="lg:flex lg:mt-20  mt-2 mb-6 mx-20">
+
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 ">
               <div className="px-6 ">
                 <a href="https://karurtech.com/" target="blank">
@@ -30,7 +31,7 @@ const Companies = () => {
 
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="blank">
+                <a href="http://finstreetservices.com/" target="blank">
                   <img
                     alt="Image"
                     src="/Image/finestreet.jpeg"
@@ -42,7 +43,7 @@ const Companies = () => {
 
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="blank">
+                <a href="https://thogai-murugan-builders.web.app/" target="blank">
                   <img
                     alt="Image"
                     src="/Image/thogaimurugan.png"
@@ -54,7 +55,7 @@ const Companies = () => {
 
             <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
-                <a href="https://karurtech.com/" target="blank">
+                <a href="https://karur-gold-finance.web.app" target="blank">
                   <img
                     alt="Image"
                     src="/Image/Logo.png"
